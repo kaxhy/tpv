@@ -294,9 +294,11 @@
       background: #fff;
       border-radius: 18px;
       padding: 8px;
-      min-width: 240px max-width:560px;
+      min-width: 240px;
+      max-width: 560px;
       max-height: 85vh;
-      overflow: hidden;
+      display: flex;
+      flex-direction: column;
       box-shadow: 0 10px 30px #0006;
     }
 
@@ -309,7 +311,9 @@
     }
 
     .modal .body {
-      padding: 20px, overflow:auto
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
     }
 
     .list {
